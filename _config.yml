@@ -2,8 +2,8 @@
 # Site
 
 title: Recetas
-url: https://alberto-dieguez.github.io/recetasfdr
-baseurl: /recetasfdr/recetasfdr
+url: https://alberto-dieguez.github.io
+baseurl: /recetasfdr
 google_analytics_key:
 newsletter_action:
 disqus_shortname:
