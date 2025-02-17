@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "~> 3.3.7"
+ruby "~> 3.3.4"
 gem 'jekyll', '4.4.1'
 gem 'tzinfo-data'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
