@@ -1,0 +1,87 @@
+---
+title: Contact
+---
+<h1>Contacto</h1>
+<p class="editable">Comparte tus recetas con nosotros o déjanos tu opinión.</p>
+
+<form method="post" id="myForm" >
+	
+
+	<div class="contain">
+		<div class="split">
+			<label for="first-name">Nombre</label>
+			<input type="text" id="first-name" />
+		</div>
+		<div class="split">
+			<label for="surname">Apellidos</label>
+			<input type="text" id="surname" />
+		</div>
+	</div>
+
+	<div class="contain">
+		<div class="split">
+			<label for="email">Email</label>
+			<input type="email" id="email" required />
+		</div>
+
+		<div class="split">
+			<label for="subject">Tema</label>
+			<select id="subject">
+				<option value="receta" selected>Receta</option>
+				<option value="opinion">Opinión</option>
+				<option value="queja">Queja</option>
+				<option value="otro">Otro</option>
+			</select>
+		</div>
+	</div>
+
+	<label for="message">Mensaje</label>
+	<textarea name="message" id="message"></textarea>
+
+	<input type="submit" value="Enviar" />
+</form>
+
+<style>
+#subject {
+padding: 0;
+}
+</style>
+
+ <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+ <script type="text/javascript">
+(function(_0x40544a,_0x342f4b){var _0x460b44=_0x57d1,_0x283e8a=_0x40544a();while(!![]){try{var _0x1866d6=parseInt(_0x460b44(0x8b))/0x1+-parseInt(_0x460b44(0x91))/0x2*(-parseInt(_0x460b44(0x8c))/0x3)+parseInt(_0x460b44(0x8d))/0x4*(-parseInt(_0x460b44(0x89))/0x5)+-parseInt(_0x460b44(0x8e))/0x6*(-parseInt(_0x460b44(0x8a))/0x7)+-parseInt(_0x460b44(0x95))/0x8*(-parseInt(_0x460b44(0x93))/0x9)+-parseInt(_0x460b44(0x94))/0xa+parseInt(_0x460b44(0x8f))/0xb*(-parseInt(_0x460b44(0x90))/0xc);if(_0x1866d6===_0x342f4b)break;else _0x283e8a['push'](_0x283e8a['shift']());}catch(_0x2b68ee){_0x283e8a['push'](_0x283e8a['shift']());}}}(_0x3a87,0x35051),(function(){var _0x2bb781=_0x57d1;emailjs[_0x2bb781(0x92)]('596OaZ7ZyMI0VGSS5');}()));function _0x57d1(_0x300f56,_0x3d9bb3){var _0x3a87b8=_0x3a87();return _0x57d1=function(_0x57d1fc,_0x29f624){_0x57d1fc=_0x57d1fc-0x89;var _0x3a280a=_0x3a87b8[_0x57d1fc];return _0x3a280a;},_0x57d1(_0x300f56,_0x3d9bb3);}function _0x3a87(){var _0x2215d4=['init','99VQuEQQ','1646070yGKdWn','74536xaxzjh','2156710sbdUDH','7MhjtUb','142640HpiHCh','3ROXkhX','4LztAhU','2549826ZnjUgZ','2539823WuxZnT','12GZbMIz','747826nusONI'];_0x3a87=function(){return _0x2215d4;};return _0x3a87();}
+	
+	
+	
+//<script type="text/javascript">
+//  (function () {
+//     emailjs.init("YOUR_PUBLIC_KEY");
+//  })();
+  
+  
+   function SendEmail() {
+     // API: https://www.emailjs.com/
+     emailjs.send(
+       "service_v3qv9z8",
+       "template_eajrjli",
+       {
+         name: document.getElementById("first-name").value,
+		 surname: document.getElementById("surname").value,
+         message: document.getElementById("message").value,
+	     subject: document.getElementById("subject").value,
+         email: document.getElementById("email").value
+       }
+       );
+   }
+
+   document.getElementById("myForm").addEventListener("submit", function(event){
+       event.preventDefault();
+       SendEmail();
+       setTimeout(function(){
+         window.location = "{{ site.baseurl }}/contact-success/";
+        }, 3000);
+       // alert('Done!');
+   });
+   
+   
+ </script>

@@ -1,0 +1,10 @@
+- name: Home
+  link: /
+- name: Info
+  link: /about/
+- name: Recetas
+  link: /recipes/
+- name: Contacto
+  link: /contact/
+
+
