@@ -9,6 +9,7 @@ newsletter_action:
 disqus_shortname:
 sass:
   style: compressed
+  sass_dir: _sass
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
 description: Blog de recetas de cociona para toda la familia.
