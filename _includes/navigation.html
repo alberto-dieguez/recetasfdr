@@ -36,9 +36,27 @@ SimpleJekyllSearch({
 	color: white;
 	width: 25em;
 	margin: 5em 0 0 -400px;
-
-
 }
+
+/* Ajuste específico para móviles */
+@media (max-width: 768px) {
+    #results-container {
+        background-color: #444;
+        color: white;
+        width: 90%; /* Ocupar casi todo el ancho disponible */
+        max-width: 25em; /* No exceder 25em en pantallas más grandes */
+        position: fixed; /* Fijarlo para que no dependa del contenedor padre */
+        top: 60px; /* Ajustar para que aparezca debajo de la barra de búsqueda */
+        left: 50%; /* Centrarlo horizontalmente */
+        transform: translateX(-50%); /* Ajuste para que quede bien centrado */
+        margin: 0 auto; /* Evitar márgenes negativos */
+        box-sizing: border-box; /* Evita que el padding modifique el ancho total */
+        z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    }
+}
+
+
+
 #search-container {
 	position: relative;
 	display: inline-block;
