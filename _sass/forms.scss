@@ -1,5 +1,5 @@
 @use "../_sass/variables" as *;
-
+@import "variables";
 .button, input[type="submit"] {
 	background: #fff;
 	cursor: pointer;
