@@ -1,12 +1,12 @@
 <nav>
-	<a class="editor-link btn" href="cloudcannon:collections/_data/navigation.yml" class="btn"><strong>&#9998;</strong> Edit navigation</a>
+	<a class="editor-link btn" href="{{ site.baseurl }}/cloudcannon:collections/_data/navigation.yml" class="btn"><strong>&#9998;</strong> Edit navigation</a>
 	{% for link in site.data.navigation %}
 	{% assign class = "" %}
 
 		{% if link.link == page.url %}
 			{% assign class = class | append: " active" %}
 		{% endif %}
-		<a href="{% include relative-src.html src=link.link %}" class="{{ class }}">{{ link.name }}</a>
+		<a href="{{ site.baseurl }}{% include relative-src.html src=link.link %}" class="{{ class }}">{{ link.name }}</a>
 	{% endfor %}
 	
 	
@@ -21,14 +21,14 @@
 
 
 <!-- Script pointing to search-script.js -->
-<script src="/js/search-script.js" type="text/javascript"></script>
+<script src="{{ site.baseurl }}/js/search-script.js" type="text/javascript"></script>
 
 <!-- Configuration -->
 <script>
 SimpleJekyllSearch({
   searchInput: document.getElementById('searchright'),
   resultsContainer: document.getElementById('results-container'),
-  json: '/search.json'
+  json: '{{ site.baseurl }}/search.json'
 })
 </script>
 <style>
