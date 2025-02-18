@@ -19,3 +19,21 @@
 		flex: 1;
 	}
 }
+
+@media (max-width: 768px) {
+    body, .ingredients {
+        text-align: center !important;
+        margin-left: 4px !important;
+        margin-right: 4px !important;
+    }
+
+    .ingredients {
+        padding: 0 4px !important;  /* Ajusta el padding para que no se mueva el contenido */
+        width: auto !important;  /* Elimina el ancho fijo para que se ajuste al contenido */
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important; /* Asegura que se centre */
+    }
+}
+
+

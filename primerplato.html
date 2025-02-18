@@ -12,7 +12,7 @@ image_view: true
 {% if page.image_view %}
 	<div class="recipes">
 		{% for recipe in site.categories.PrimerPlato %}
-			<div class="recipe" style="background-image: url('{{ recipe.featured_image }}')">
+			<div class="recipe" style="background-image: url('{{ site.baseurl }}{{ recipe.featured_image }}')">
 				<a href="{{ site.baseurl }}{{ recipe.url }}"><span style="background-color:#444;">{{ recipe.title }}</span></a>
 			</div>
 		{% endfor %}
