@@ -3,7 +3,7 @@ date: 2025-02-21
 title: Pollo al Horno con Nata, Tomillo y Champiñones
 categories:
   - SegundoPlato
-featured_image: /images/pechuga-de-pollo-con-nata/2.png
+featured_image: /images/pechuga-de-pollo-con-nata/1.png
 recipe:
   servings: 4 personas
   prep: 15 minutos
