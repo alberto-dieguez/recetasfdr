@@ -31,7 +31,7 @@ recipe:
     1. Cocina el filete de lomo adobado primero. 
     2. Bate los huevos con una pizca de sal y ponlo en la sartén.
     3. Pon los dos panes encima de la tortilla, por las dos caras, es decir, los pones y luego le das la vuelta.
-    ![Cookie](/images/sandwich-tortilla-francesa-lomo/1.png)
+    ![Sándwich de Tortilla](https://raw.githubusercontent.com/alberto-dieguez/recetasfdr/refs/heads/main/images/sandwich-tortilla-francesa-lomo/1.png)
     4. Tosta ligeramente las rebanadas de pan (opcional).
     5. Monta el sándwich, añade las rodajas de tomate, el filete, aguacate en rodajas y canonigos.
     6. Cierra con cuidado el Sandwich. 
