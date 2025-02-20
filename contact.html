@@ -50,6 +50,10 @@ body {
 	margin-left: 4px !important;
     margin-right: 4px !important;
 }
+.contain {
+	display: block;
+	padding: 0px 15px 0px 15px;
+}
 </style>
 
  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
@@ -83,7 +87,7 @@ body {
        event.preventDefault();
        SendEmail();
        setTimeout(function(){
-         window.location = "{{ site.baseurl }}/contact-success/";
+         window.location = "{{ site.baseurl }}/contact-success.html";
         }, 3000);
        // alert('Done!');
    });
