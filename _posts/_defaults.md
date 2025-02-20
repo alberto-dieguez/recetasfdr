@@ -2,7 +2,7 @@
 date: 2023-03-28
 title: Ensalada fácil
 categories:
-  - EntranteEnsalada / PrimerPlato / SegundoPlato / Postre
+  - EntranteEnsalada / PrimerPlato / SegundoPlato / Postre / Otros
 featured_image: /images/ensalada-facil/1.png
 recipe:
   servings: 1 persona
